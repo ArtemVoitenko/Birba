@@ -1,0 +1,44 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  color: #423f54;
+  font-weight: 400;
+  font-family: $default-font;
+}
+
+.responsive-img {
+  max-width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.unable-scroll {
+  overflow: hidden;
+}
+.bottom-line {
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: 20px;
+}
+@supports(max-width: env(safe-area-inset-left)) {
+  .container {
+    max-width: calc(100% - env(safe-area-inset-left)*2);
+  }
+}

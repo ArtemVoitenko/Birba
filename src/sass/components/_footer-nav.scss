@@ -1,0 +1,29 @@
+.footer-nav {
+	&__link {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		display: block;
+		text-transform: uppercase;
+		font-size: 14px;
+
+		text-align: center;
+		&:hover {
+			color: $accent;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.footer-nav {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+		&__link {
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 14px;
+			color: $grey;
+			text-transform: none;
+		}
+	}
+}

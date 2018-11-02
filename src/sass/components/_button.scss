@@ -1,0 +1,24 @@
+.button {
+	width: 100%;
+	// height: 30px;
+	padding-top: 17px;
+	padding-bottom: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $light-grey;
+	color: $grey;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 0;
+	&--product-card {
+		margin-top: 10px;
+	}
+	&:hover {
+		// box-shadow: 4px 5px 109px 1px rgba(46,74,117,0.69);
+		// transform: scale(1.2);
+
+		box-shadow: 1px 1px 10px 1px rgba(127,127,127,0.4);
+	}
+}

@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+	.schedule {
+		position: relative;
+		font-size: 12px;
+
+		
+		&__icon {
+			position: absolute;
+			left: -20px;
+			width: 13px;
+			height: 13px;
+		}
+		&__weekends {
+			display: block;
+
+			font-size: 10px;
+			color: $grey;
+
+		}
+	}
+}
+@media (min-width: 992px) {
+	.schedule {
+		font-size: 14px;
+		font-weight: bold;
+		padding-left: 17px;
+		&__weekends {
+			font-size: 12px;
+			font-weight: normal;
+		}
+		&__icon {
+			top: 2px;
+			left: 0;
+		}
+	}
+}

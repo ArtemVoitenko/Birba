@@ -1,0 +1,28 @@
+.sticker {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: $accent;
+	&:before {
+		content: '';
+		color: $white;
+		font-size: 12px;
+	}
+	&--stock {
+		&:before {
+			content: 'Акция';
+		}
+	}
+	&--new {
+		&:before {
+			content: 'Новинка';
+		}
+	}
+}
